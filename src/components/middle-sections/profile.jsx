@@ -9,7 +9,7 @@ export default function Profile() {
           I love empowering individuals and groups who seek to honor the
           Creator through what they do. Through this brand, I seek to use
           remote work in programming as a vehicle to support community
-          development effort on the side.
+          development endeavors on the side.
         </p>
       </div>);
 }
