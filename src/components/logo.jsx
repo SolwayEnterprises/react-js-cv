@@ -8,7 +8,6 @@ export default function Logo() {
   let transitioner = "";
   let slider = "";
   let imageSize = "";
-  let moveUp = null;
   let showNavBar = false;
 
   window.addEventListener("scroll", () => {
@@ -22,7 +21,7 @@ export default function Logo() {
   });
 
   const xAxisPoint = 100;
-  if (isScrolled && screenWidth > 1000) {
+  if (isScrolled) {
     if (yAxis < xAxisPoint) {
       transitioner = xAxisPoint - yAxis;
     }
@@ -31,23 +30,14 @@ export default function Logo() {
     }
     slider = transitioner + "%";
     imageSize = 25 + transitioner + "%";
-  }
-  else if (isScrolled && screenWidth <= 1000) {
-    if (yAxis < xAxisPoint) {
-      slider = 25 + (yAxis - 75) * 1.5 + "%";
-      imageSize = 25 + xAxisPoint - yAxis + "%";
-    }
-    else if (yAxis >= xAxisPoint) {
-      slider = 74 + "%";
-      imageSize = 25 + "%";
-      moveUp = 0;
+    if (screenWidth <= 1000) {
       showNavBar = true;
     }
   }
 
   const moveLogo = {
-    top: moveUp,
-    left: slider,
+    top: 0,
+    right: slider,
     width: imageSize,
     opacity: 0.75
   };
