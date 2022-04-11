@@ -44,11 +44,11 @@ export default function Logo() {
 
   return (
     <div>
-      <div className="logo-wrapper" style={showNavBar ? {opacity: 1} : null}></div>
+      <div className="navbar" style={showNavBar ? {opacity: 1} : null}></div>
       <div>
         <img
           className="logo"
-          style={isScrolled ? moveLogo : null}
+          style={isScrolled || window.scrollY > 75 ? moveLogo : null}
           src="./media/logo-transparent.png"
           alt="brand-logo"
         />

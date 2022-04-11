@@ -1,7 +1,7 @@
 const experiences = [
     {
       key: 1,
-      href: "https://thelionisalive-newsletter.herokuapp.com/",
+      href: "https://thelionisalive-newsletter-ex.herokuapp.com/",
       image: "./media/signup-sheet.png",
       alt: "API signup sheet",
       title: "Newsletter Signup Sheets",

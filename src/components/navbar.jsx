@@ -13,8 +13,7 @@ export default function NavBar() {
 
   const menuStyle = {
     paddingLeft: "3%",
-    textDecoration: "none",
-    fontSize: "1.2rem"
+    textDecoration: "none"
   };
 
   return (
@@ -23,17 +22,17 @@ export default function NavBar() {
         <MenuIcon />
       </IconButton>
       <Slide direction="right" in={isClicked} mountOnEnter unmountOnExit>
-        <a style={menuStyle} href="#about">
+        <a className="navbar-options" style={menuStyle} href="#about">
             About
         </a>
       </Slide>
       <Slide direction="right" in={isClicked} mountOnEnter unmountOnExit>
-        <a style={menuStyle} href="#Experience">
+        <a className="navbar-options" style={menuStyle} href="#Experience">
             Experience
         </a>
       </Slide>
       <Slide direction="right" in={isClicked} mountOnEnter unmountOnExit>
-        <a style={menuStyle} href="#contact">
+        <a className="navbar-options" style={menuStyle} href="#contact">
             Contact
         </a>
       </Slide>

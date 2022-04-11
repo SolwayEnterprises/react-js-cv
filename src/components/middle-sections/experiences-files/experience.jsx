@@ -11,11 +11,14 @@ import LockIcon from '@mui/icons-material/Lock';
 
 export default function Experience() {
 
+  const [yAxis, setYAxis] = useState();
   const [value, setValue] = useState('1');
   const [screenWidth, recordSreenWidth] = useState();
   const [newHeight, setNewHeight] = useState();
 
   window.addEventListener('scroll', () => {
+    setYAxis(window.scrollY);
+    
     let newSize = '';
     recordSreenWidth(window.innerWidth);
     if (screenWidth < 1000 && screenWidth > 750) {
@@ -27,6 +30,18 @@ export default function Experience() {
       setNewHeight(newSize);
     }
   });
+
+  let visiblePoint = 1800;
+  let endPictureStyle = {
+    opacity: 0.7
+  };
+  if (screenWidth < 1000) {
+    visiblePoint = 2100;
+    endPictureStyle = {
+      height: newHeight,
+      opacity: 0.7
+    }
+  }
 
   const experienceStyle = {
     display: "flex",
@@ -40,7 +55,7 @@ export default function Experience() {
   return (
     <div>
       <h2>My Experience</h2>
-      <div className="end-picture" style={ screenWidth < 1000 ? {height: newHeight} : null }>
+      <div className="end-picture" style={ yAxis >= visiblePoint ? endPictureStyle : null }>
         <div style={ screenWidth >= 1000 ? experienceStyle : null }>
           {screenWidth >= 1000 ?
             experiences.map(experience => (

@@ -6,7 +6,7 @@ export default function Top() {
             <div className="top-text">
                 <h1>I'm Daniel.</h1>
                 <h2 className="intro">
-                    A pro-at-grammar <span className="pro">pro</span>grammer.
+                    A pro-at-grammar programmer.
                 </h2>
             </div>
         </div>

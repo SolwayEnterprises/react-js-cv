@@ -32,9 +32,9 @@ export default function Skills() {
           <img src="./media/Lion-speech-sm.PNG" className="lion-speech-sm" alt="static page icon" />
           <h3>Proofreading & Writing</h3>
           <p>
-            At an early age, I developed a keen eye for detail through close study of picture
-            tutorials and writing styles with their rules. At university, I studied journalism to
-            further my skill in critical analysis and writing.
+            At an early age, I developed a keen eye for detail through close study of tutorials,
+            writing styles, and rules of writing. At university, I studied journalism to further my
+            skill in critical analysis and writing.
           </p>
         </div>
         <div className="skill-row bottom-skill">
@@ -42,9 +42,9 @@ export default function Skills() {
           <img src="./media/hyper-terminal.gif" className="terminal-sm" alt="terminal gif" />
           <h3>Programming</h3>
           <p>
-            In recent months, I've discovered how much skills of critical analysis and creative
-            writing filter into programming. I've since dived full-time into the studying and
-            practicing of web development.
+            Critical analysis and creative writing fit right in with programming. In recent
+            months, I've dived full-time into the studying and practicing of web development.
+            I don't do either because I have to, I do it because I love it.
           </p>
         </div>
       </div>

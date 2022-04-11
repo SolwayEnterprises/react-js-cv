@@ -3,6 +3,11 @@ body {
   margin: 0;
   text-align: center;
   font-family: Cinzel Decorative, Baskervville, serif;
+  /* width: 2000px; */
+}
+
+.page-boundary {
+  max-width: 1600px;
 }
 
 body, .skill-row, .cutout {
@@ -22,6 +27,10 @@ a {
 
 a:hover, h1, h2, p {
   color: #fde8cd;
+}
+
+.navbar-options {
+  font-size: 1.2rem;
 }
 
 .logo {
@@ -56,10 +65,6 @@ h2 {
   margin: 0 auto 0 auto;
   width: 30%;
   padding-bottom: 1.875rem;
-}
-
-.pro {
-  text-decoration: underline;
 }
 
 p {
@@ -99,15 +104,16 @@ hr {
 
 .skill-row {
   text-align: left;
-  width: 40%;
 }
 
 .top-skill {
   margin: 6.25rem auto 6.25rem 35%;
+  width: 40%;
 }
 
 .bottom-skill {
-  margin: 6.25rem 35% 6.25rem auto;
+  margin: 6.25rem 35% 6.25rem 25%;
+  width: 38%;
 }
 
 .lion-speech, .cutout:after, .terminal {
@@ -117,7 +123,7 @@ hr {
 .lion-speech {
   width: 9.375rem;
   top: -30.625rem;
-  margin-left: -25%;
+  margin-left: -26%;
 }
 
 .lion-speech-sm, .terminal-sm, .card-sm {
@@ -129,7 +135,7 @@ hr {
   width: 9.375rem;
   height: 75rem;
   top: -31.25rem;
-  margin-left: -25%;
+  margin-left: -26%;
   overflow: hidden;
 }
 
@@ -144,7 +150,7 @@ hr {
 .terminal {
   float: right;
   width: 11.25rem;
-  margin-left: 95.5%;
+  margin-left: 101%;
   border-radius: 25%;
 }
 
@@ -161,10 +167,6 @@ hr {
   -moz-transition: opacity 1s ease-in-out;
   -o-transition: opacity 1s ease-in-out;
   transition: opacity 1s ease-in-out;
-}
-
-.end-picture:hover {
-  opacity: 0.7;
 }
 
 .card-lg {
@@ -228,8 +230,69 @@ hr {
   margin: 1rem 1.25rem;
 }
 
+@media (max-width: 1500px) {
+  .top-skill {
+    margin-left: 36%;
+    width: 39%;
+  }
+  
+  .bottom-skill {
+    width: 37%;
+  }
+  
+  .lion-speech, .cutout {
+    margin-left: -30%;
+  }
+}
+
+@media (max-width: 1350px) {
+  .top-skill {
+    margin-left: 38%;
+    width: 37%;
+  }
+  
+  .bottom-skill {
+    width: 35%;
+  }
+  
+  .lion-speech, .cutout {
+    margin-left: -35%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .top-skill {
+    margin-left: 39%;
+    width: 36%;
+  }
+  
+  .bottom-skill {
+    width: 33%;
+  }
+  
+  .lion-speech, .cutout {
+    margin-left: -39%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .top-skill {
+    margin-left: 40%;
+    width: 35%;
+  }
+  
+  .bottom-skill {
+    margin-left: 25%;
+    width: 32%;
+  }
+  
+  .lion-speech, .cutout {
+    margin-left: -45%;
+  }
+}
+
 @media (max-width: 1000px) {
-  .logo-wrapper {
+  .navbar {
     position: fixed;
     background: linear-gradient(220deg, #1c485d, #416677);
     margin-top: -5rem;
@@ -245,9 +308,17 @@ hr {
 
   .skill-row {
     text-align: center;
-    width: 30%;
+    width: 40%;
   }
-  
+
+  .top-skill {
+    margin: 6.25rem auto 6.25rem 30%;
+  }
+
+  .bottom-skill {
+    margin: 6.25rem 30% 6.25rem auto;
+  }
+
   .lion-speech-sm, .terminal-sm {
     position: relative;
   }
@@ -259,7 +330,7 @@ hr {
   .lion-speech-sm, .terminal-sm {
     display: block;
     margin: auto auto 15%;
-    border-radius: 40%;
+    border-radius: 25%;
   }
 
   .terminal-sm {
@@ -274,16 +345,22 @@ hr {
 
   .card-sm {
     display: block;
-    width: 50%;
+    width: 40%;
+  }
+}
+
+@media (max-width: 800px) {
+  .card-sm {
+    width: 55%;
   }
 }
 
 @media (max-width: 750px) {
-  .logo-wrapper {
+  .navbar {
     height: 7.5rem;
   }
 
-  h1, h2, .bio, .skill-row {
+  h1, h2, .bio, .skill-row, .contact-message {
     width: 50%;
   }
 
@@ -302,13 +379,85 @@ hr {
 }
 
 @media (max-width: 650px) {
+  .navbar {
+    height: 7rem;
+  }
+
+  .end-picture {
+    height: 30rem !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    height: 6.5rem;
+  }
+
+  .end-picture {
+    height: 32rem !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar {
+    height: 5.5rem;
+  }
+
+  .navbar-options, h3 {
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 1.5rem !important;
+  }
+
+  .bio, .skill-row, .contact-message {
+    width: 60%;
+  }
+
+  .top-skill, .bottom-skill {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+  .end-picture {
+    height: 33rem !important;
+  }
+
   .card-sm {
     width: 70%;
   }
 }
 
-@media (max-width: 600px) {
-  .logo-wrapper {
-    height: 6.5rem;
+@media (max-width: 450px) {
+  h2 {
+    font-size: 1.35rem !important;
+  }
+
+  .card-sm {
+    width: 80%;
+  }
+}
+
+@media (max-width: 400px) {
+  .navbar {
+    height: 5rem;
+  }
+
+  .navbar-options {
+    font-size: 0.8rem;
+  }
+
+  .bio, .skill-row, .contact-message {
+    width: 70%;
+  }
+
+  .top-skill, .bottom-skill {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  .end-picture {
+    height: 34rem !important;
   }
 }

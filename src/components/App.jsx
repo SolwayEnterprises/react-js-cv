@@ -7,7 +7,7 @@ import Footer from "./footer";
 
 export default function App() {
   return (
-    <div>
+    <div className="page-boundary">
       <Logo />
       <Navbar />
       <Top />
