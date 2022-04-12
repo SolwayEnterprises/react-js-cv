@@ -29,8 +29,44 @@ export default function Logo() {
       transitioner = 0;
     }
     slider = transitioner + "%";
-    imageSize = 25 + transitioner + "%";
-    if (screenWidth <= 1000) {
+    
+    if (screenWidth <= 1500 && screenWidth > 1400) {
+      imageSize = 23 + transitioner + "%";
+    }
+    else if (screenWidth <= 1400 && screenWidth > 1300) {
+      imageSize = 21 + transitioner + "%";
+    }
+    else if (screenWidth <= 1300 && screenWidth > 1200) {
+      imageSize = 18.5 + transitioner + "%";
+    }
+    else if (screenWidth <= 1200 && screenWidth > 1100) {
+      imageSize = 16 + transitioner + "%";
+    }
+    else if (screenWidth <= 1100 && screenWidth > 1050) {
+      imageSize = 15 + transitioner + "%";
+    }
+    else if (screenWidth <= 1050 && screenWidth > 1000) {
+      imageSize = 16 + transitioner + "%";
+    }
+    else if (screenWidth <= 1000 && screenWidth > 950) {
+      imageSize = 17 + transitioner + "%";
+    }
+    else if (screenWidth <= 950 && screenWidth > 900) {
+      imageSize = 18 + transitioner + "%";
+    }
+    else if (screenWidth <= 900 && screenWidth > 850) {
+      imageSize = 19 + transitioner + "%";
+    }
+    else if (screenWidth <= 850 && screenWidth > 800) {
+      imageSize = 20 + transitioner + "%";
+    }
+    else if (screenWidth <= 800 && screenWidth > 750) {
+      imageSize = 21 + transitioner + "%";
+    } else {
+      imageSize = 25 + transitioner + "%";
+    }
+
+    if (screenWidth <= 1100) {
       showNavBar = true;
     }
   }

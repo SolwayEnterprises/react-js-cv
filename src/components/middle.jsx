@@ -7,13 +7,15 @@ import Experience from "./middle-sections/experiences-files/experience";
 export default function Middle() {
   return (
       <div className="middle" id="about">
-        <Profile />
-        <hr />
-        <Skills />
-        <hr id="Experience" />
-        <Experience />
-        <hr />
-        <Contact />
+        <div className="boundary">
+          <Profile />
+          <hr />
+          <Skills />
+          <hr id="Experience" />
+          <Experience />
+          <hr />
+          <Contact />
+        </div>
       </div>
   );
 }

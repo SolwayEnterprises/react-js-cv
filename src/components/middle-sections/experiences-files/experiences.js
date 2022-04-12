@@ -5,7 +5,7 @@ const experiences = [
       image: "./media/signup-sheet.png",
       alt: "API signup sheet",
       title: "Newsletter Signup Sheets",
-      content: "Working with APIs (Application Programming Interface), we can work together to dynamically update the content you want - weather stats, email lists, quote-of-the-day, and much more!"
+      content: "Using APIs (Application Programming Interfaces), you and I can programatically update the content you want - from weather stats to email newsletter lists to quote-of-the-day, and so much more!"
     },
     {
       key: 2,
@@ -13,7 +13,7 @@ const experiences = [
       image: "./media/Blog.png",
       alt: "Blog",
       title: "Build-as-you-go with EJS",
-      content: "Need a website that builds itself the more you add? I've got You covered. Linking your EJS website to your database, we prevent overloading your server with the full weight of your package!"
+      content: "Need a website that builds itself the more you add? I've got you covered. In linking your EJS website to your database, we prevent overloading your server with the full weight of your package!"
     },
     {
       key: 3,

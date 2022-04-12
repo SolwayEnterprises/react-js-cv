@@ -3,11 +3,6 @@ body {
   margin: 0;
   text-align: center;
   font-family: Cinzel Decorative, Baskervville, serif;
-  /* width: 2000px; */
-}
-
-.page-boundary {
-  max-width: 1600px;
 }
 
 body, .skill-row, .cutout {
@@ -76,6 +71,11 @@ p {
   background-color: #336369;
 }
 
+.boundary {
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
 .profile {
   width: 12.5rem;
   top: 1.25rem;
@@ -133,18 +133,18 @@ hr {
 .cutout {
   float: left;
   width: 9.375rem;
-  height: 75rem;
-  top: -31.25rem;
+  height: 91.15rem;
+  top: -47.4rem;
   margin-left: -26%;
   overflow: hidden;
 }
 
 .cutout:after{
   content:'';
-  left: -30.938rem; top: 0.313rem;
+  left: -50.938rem; top: -3.8rem;
   border-radius:50%;
   width: 8.75rem; height: 8.75rem;
-  border: 31.25rem solid #336369;
+  border: 51.25rem solid #336369;
 }
 
 .terminal {
@@ -158,8 +158,6 @@ hr {
   background-image: url("./mountain-mist.JPG");
   background-size: 100%;
   background-repeat: no-repeat;
-  align-items: center;
-  display: flex;
   height: 40rem;
   width: 100%;
   opacity: 0;
@@ -170,7 +168,6 @@ hr {
 }
 
 .card-lg {
-  flex-grow: 1;
   padding: 2%;
 }
 
@@ -276,6 +273,20 @@ hr {
 }
 
 @media (max-width: 1100px) {
+  .navbar {
+    position: fixed;
+    background: linear-gradient(220deg, #1c485d, #416677);
+    margin-top: -5rem;
+    width: 100%;
+    height: 7rem;
+    z-index: 1;
+    opacity: 0;
+    -webkit-transition: opacity 0.2s ease-in-out;
+    -moz-transition: opacity 0.2s ease-in-out;
+    -o-transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
+  }
+
   .top-skill {
     margin-left: 40%;
     width: 35%;
@@ -292,20 +303,6 @@ hr {
 }
 
 @media (max-width: 1000px) {
-  .navbar {
-    position: fixed;
-    background: linear-gradient(220deg, #1c485d, #416677);
-    margin-top: -5rem;
-    width: 100%;
-    height: 9.5rem;
-    z-index: 1;
-    opacity: 0;
-    -webkit-transition: opacity 0.2s ease-in-out;
-    -moz-transition: opacity 0.2s ease-in-out;
-    -o-transition: opacity 0.2s ease-in-out;
-    transition: opacity 0.2s ease-in-out;
-  }
-
   .skill-row {
     text-align: center;
     width: 40%;
